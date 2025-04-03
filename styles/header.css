@@ -1,0 +1,55 @@
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Flex container for logo to align image and text */
+header .logo a {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .logo a:hover {
+  color: var(--secondary-color);
+}
+
+/* Style for the image within the logo */
+header .logo a img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 0.5rem; /* Add spacing between image and text */
+}
+
+/* Navigation styles remain unchanged */
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1.5rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
