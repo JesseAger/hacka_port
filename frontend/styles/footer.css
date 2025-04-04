@@ -14,7 +14,6 @@ footer .container {
   padding: 0 1rem;
 }
 
-/* Ensure the copyright and navigation are centered on smaller screens */
 footer p {
   margin: 0;
   font-size: 0.9rem;
@@ -40,13 +39,23 @@ footer nav ul li a:hover {
   color: var(--primary-color);
 }
 
+footer .footer-icon i {
+  font-size: 1.2rem;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+footer .footer-icon i:hover {
+  opacity: 0.7;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   footer .container {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
   footer nav ul {
-      margin-top: 0.5rem;
+    margin-top: 0.5rem;
   }
 }

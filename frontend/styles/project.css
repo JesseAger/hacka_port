@@ -1,0 +1,71 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Space for external header and footer */
+  header, footer {
+    width: 100%;
+  }
+  
+  /* Main container for page content */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  /* Project section styling */
+  .project-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto; /* Center horizontally */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* 1px border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+    text-align: center; 
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    color: #004aad; /* Primary color */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .project-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .project-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project-description {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    min-width: 260px;
+  }
+  
